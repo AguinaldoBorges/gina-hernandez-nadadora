@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Jquery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <title>LP 1</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between" id="header-imagens">
+                <div class="col col-12 d-flex justify-content-center align-items-center" id="header-imagem">
+                    <h1 id="header-title">Gina Hernandez</h1>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#section1">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#section2">Sobre</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="btn btn-warning" aria-current="page" href="#footer">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col  col-lg-9 col-md-8 col-12" id="section1-left">
+                        <img src="./assets/images/foto-4.jpg" class=" mx-auto d-block" alt="..." loading="lazy"
+                            id="section1-imagem">
+                    </div>
+                    <!-- Right-News -->
+                    <div class="col  col-lg-3 col-md-8 col-12" id="section1-right">
+                        <ul>
+                            <li onclick="mudarImagem('./assets/images/foto-1.jpg')">
+                                <div class="row">
+                                    <div
+                                        class="col col-lg-5 col-md-2 col-3 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/foto-1.jpg" alt="">
+                                    </div>
+                                    <div class="col col-lg-7 col-md-10 col-9  d-flex align-items-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="mudarImagem('./assets/images/foto-2.jpg')">
+                                <div class="row">
+                                    <div
+                                        class="col col-lg-5 col-md-2 col-3 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/foto-2.jpg" alt="">
+                                    </div>
+                                    <div class="col col-lg-7 col-md-10 col-9  d-flex align-items-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="mudarImagem('./assets/images/foto-3.jpg')">
+                                <div class="row">
+                                    <div
+                                        class="col col-lg-5 col-md-2 col-3 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/foto-3.jpg" alt="">
+                                    </div>
+                                    <div class="col col-lg-7 col-md-10 col-9  d-flex align-items-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="mudarImagem('./assets/images/foto-4.jpg')">
+                                <div class="row">
+                                    <div
+                                        class="col col-lg-5 col-md-2 col-3 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/foto-4.jpg" alt="">
+                                    </div>
+                                    <div class="col col-lg-7 col-md-10 col-9  d-flex align-items-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="mudarImagem('./assets/images/foto-5.jpg')">
+                                <div class="row">
+                                    <div
+                                        class="col col-lg-5 col-md-2 col-3 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/foto-5.jpg" alt="">
+                                    </div>
+                                    <div class="col col-lg-7 col-md-10 col-9  d-flex align-items-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <h3 class="table-header-title">Últimas Conquistas</h3>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-danger">
+                                    <td scope="row">3º</td>
+                                    <td>Troféu Brasil de Natação</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">2º</td>
+                                    <td>Troféu José Finkel</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td scope="row">5º</td>
+                                    <td>Troféu Maria Lenk</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td scope="row">4º</td>
+                                    <td>Circuito Brasileiro de Maratonas Aquáticas</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">1º</td>
+                                    <td>Copa Brasil de Natação Master</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <h3 class="table-header-title">Principais Prêmios</h3>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-danger">
+                                    <td scope="row">Ouro</td>
+                                    <td>Jogos Olímpicos de Tóquio</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">Prata</td>
+                                    <td>Mundial de Piscina Curta de Abu Dhabi</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td scope="row">Bronze</td>
+                                    <td>Pan-Americano de Santiago</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td scope="row">Ouro</td>
+                                    <td>Troféu Maria Lenk</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">Bronze</td>
+                                    <td>Copa do Mundo de Natação FINA </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <h3 class="table-header-title">Próximas Disputas</h3>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-danger">
+                                    <td scope="row">15 ago</td>
+                                    <td>Troféu Brasil de Natação</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">22 ago</td>
+                                    <td>Troféu José Finkel</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td scope="row">29 ago</td>
+                                    <td>Troféu Maria Lenk</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td scope="row">06 set</td>
+                                    <td>Circuito Brasileiro de Maratonas Aquáticas</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td scope="row">13 set</td>
+                                    <td>Copa Brasil de Natação Master</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+
+                        <div class="d-flex justify-content-center" id="calendario">
+
+                            <input type="hidden" id="data" class="w-100">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Perfil -->
+                    <div class="col col-lg-3 col-md-4 col-12">
+                        <img src="./assets/images/perfil.jpg" alt="gina-nadadora" id="perfil-imagem">
+                    </div>
+
+                    <div class="col col-lg-3 col-md-4 col-12">
+                        <h2>Gina Hernandez</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis rerum laborum
+                        molestias, excepturi corrupti, animi vel iusto praesentium nostrum architecto, similique aliquam
+                        neque hic? Numquam delectus id doloremque cumque.
+                    </div>
+
+
+
+                    <div class="col col-lg-6 col-md-4 col-12">
+                        <table class="table" id="perfil-tabela">
+                            <thead>
+                                <tr>
+                                    <h3 class="table-header-title">Perfil</h3>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-danger">
+                                    <th>Nome</th>
+                                    <td>Gina da Silva Hernandez</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <th>Data de nascimento</th>
+                                    <td>15/03/1998</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th>Cidade natal</th>
+                                    <td>Rio de Janeiro</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th>Altura</th>
+                                    <td>1,70 m</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <th>Peso</th>
+                                    <td>60 kg</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-dark text-white py-4" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Gina Hernandes</h5>
+                    <p>Um site incrível sobre uma nadadora incrível.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link text-white" href="#header">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#section1">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#section2">Sobre</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Inscreva-se para receber novidades exclusivas.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Digite seu email"
+                                aria-label="Digite seu email" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button"
+                                id="button-addon2">Inscrever</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <p>Copyright © 2023 Gina Hernandez. Todos os direitos reservados.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a class="text-white" href="#"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function () {
+            $("#calendario").datepicker({
+
+                altField: "#calendario-fixo",
+                inline: true
+            });
+        });
+    </script>
+
+    <script src="./script.js"></script>
+    <script src="./requisicoes.js"></script>
+</body>
+
+</html>
